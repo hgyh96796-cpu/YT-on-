@@ -1,0 +1,14 @@
+{
+  "name": "youtube-thumbnail-downloader",
+  "version": "1.0.0",
+  "description": "YouTube Thumbnail Downloader App",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r index.html style.css script.js assets dist/ || true"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Thumbnail Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="container">
+      <div class="card">
+        <div class="logo-wrap">
+          <img src="assets/icon.png" alt="App Icon" class="app-icon" />
+          <h1>YouTube Thumbnail Downloader</h1>
+        </div>
+
+        <p class="subtitle">
+          Paste any YouTube video link, preview thumbnail, and save it to your gallery.
+        </p>
+
+        <input
+          type="text"
+          id="videoUrl"
+          placeholder="Paste YouTube video URL here..."
+        />
+
+        <button onclick="getThumbnail()">Get Thumbnail</button>
+
+        <div id="result" class="hidden">
+          <h2>Thumbnail Preview</h2>
+          <img id="thumbnailImg" src="" alt="Thumbnail Preview" />
+
+          <div class="btn-group">
+            <button class="download-btn" onclick="saveThumbnail('hd')">Save HD</button>
+            <button class="download-btn secondary" onclick="saveThumbnail('mq')">Save Medium</button>
+          </div>
+        </div>
+
+        <p id="error" class="error"></p>
+      </div>
+
+      <div class="ad-card">
+        <h3>sored</h3>
+        <div class="ad-box">
+          <ins style="width: 300px;height:250px"
+               data-width="300"
+               data-height="250"
+               class="r8474626807"
+               data-domain="//data527.click"
+               data-affquery="/f1cbb44864a5ae783ed1/8474626807/?placementName=default"></ins>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script async src="//data527.click/js/responsive.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
